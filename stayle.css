@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.header{
+    background-image:url("img/header-bg.png") ;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight:500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.btn-wrapper{
+    gap:20px ;
+    display: flex;
+    align-items: center;
+
+}
+.btn{
+    border: 1px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px 31px;
+}
+.burger-menu{
+    display: none;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    padding: 11px;
+}
+.burger-menu img{
+    width: 16px;
+    filter: invert();
+}
+#check{
+    display: none;
+}
+
+#check:checked ~.menu{
+        transform: translate(100%);
+}
+
+.promo{
+   padding: 140px 0 190px;
+   text-align:center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+}
+.promo-title{
+   
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 0.05;
+    text-transform: uppercase;
+    color: #fff;
+}
+.promo-subtitle{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #fff;
+    width: 40%;
+    text-align:center;
+    margin: 0 auto;
+}
+.promo-btn{
+    border-radius: 6px;
+    background-color: #ffff;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ed4c5c;
+    padding: 17px 30px;
+}
+
+
+
+
+
+
+.banner{
+    padding: 0;
+    margin-top: 150px;
+    gap: 100px;
+   align-items: center;
+    display:flex;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    width: 45%;
+    gap: 25px;
+}
+.banner-paragraph{
+   text-align: left;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+}
+.paragraph{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  .banner-sub{
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 30px;
+    text-align: justify;
+    color: #ed4c5c;
+  }
+
+    .banner-img{
+        border-radius: 15px;
+        color: #c4c4c4;
+        width: 50%;
+    }
+
+     .banner-img img{
+        width: 100%;
+     }
+
+
+
+
+
+
+
+
+
+.title{
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+}
+
+.possibilities{
+    margin-top: 150px;
+}
+.possibilities-cards{
+    margin-top: 65px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card-img img{
+    width: 100%;
+}
+.possibilities-cards-img img{
+    width: 100%;
+}
+.possibilities .card-text{
+    box-shadow: 0 5px 30px rgb(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px 36px;
+    position: relative;
+    top: -60px;
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.possibilities .card-title{
+    font-weight: 400;
+    font-size: 18px;
+    color: #101010;
+}
+.possibilities .card-subtitle{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+    margin-top: 20px;
+}
+
+.possibilities .card-link{
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #ed4c5c;
+}
+
+
+.technology{
+    margin-top: 60px;
+}
+
+.technology-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.technology-cards .card{
+    text-align: center;
+    padding: 30px;
+}
+
+.focus{
+    margin-top: 50px;
+    padding: 95px 0;
+    background-color: #Ed4C5C;
+}
+
+.focus .container{
+    display: flex;
+    gap: 125px;
+}
+
+.focus-text{
+    width: 45%;
+    color:#fff;
+    flex-direction: column; 
+    gap: 40px;
+    justify-content: center;
+}
+.focus-img{
+    width: 50%;
+}
+.focus-img img{
+    width: 100%;
+}
+
+    .focus-title{
+        font-weight: 500;
+        font-size: 36px;
+    }
+.focus-p{
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 140%;
+       text-align: justify;
+       color: #fff;
+}
+
+.focus-icons{
+    display: flex;
+    gap: 24px;
+    align-items:center;
+
+}
+
+
+
+.contact{
+    padding: 160px 0 170px;
+    display: flex;
+    gap: 115px;
+    justify-content: space-between;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text .title{
+    text-align: left;
+}
+
+.contact-p{
+    margin-top: 45px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #000;
+}
+
+.contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+}
+
+.contact-input{
+    width: 100%;
+    border-radius: 1px solid #333;
+    background-repeat: 6px;
+    padding: 20px 30px;
+}
+
+.contact-btn{
+    border-radius: 10px;
+    border: 1.50px solid #ed4c5c;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border-color: #ed4c5c;
+    padding: 17px 40px;   
+    background-color: #Ed4C5C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1060px){
+    .menu{
+        transition: 0,03;
+        position: fixed;
+        top:0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.954);
+        height: 100%;
+        flex-direction: column;
+        transform: translate(-100%);
+    }
+.burger-menu{
+    display: block;
+}
+.promo-subtitle{
+    width: 60%;
+
+}
+.possibilities-cards{
+    grid-template-columns: repeat(2, 1fr);
+}
+.technology-cards{
+grid-template-columns: repeat(2, 1fr);
+}
+.banner{
+    flex-direction: column;
+}
+.banner-text{
+    width: 100%;
+}
+.banner-img{
+    width: 100%;
+}
+.focus .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .focus-img{
+        width: 100%;
+    }
+    .focus-text{
+        width: 100%;
+    }
+
+    .contact{
+        gap: 60px;
+    }
+
+}
+@media(max-width:800px){
+    .promo-title{
+        font-size: 52px;
+    }
+
+    .promo-subtitle{
+        width: 100%;
+    }
+    .possibilities-cards{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    
+    .contact{
+        flex-direction: column;
+    }
+    .contact-text{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+    .technology-cards{
+        grid-template-columns:1fr;
+        }
+}
